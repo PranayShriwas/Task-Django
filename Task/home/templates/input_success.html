@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Success</title>
+</head>
+<body>
+    <h1>Input Success</h1>
+    <table border='1px solid #dddddd'> 
+        <thead>
+            <tr class="thead-light">
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Total Quantity</th>
+                <th>Lot Size</th>
+                <th>Interval</th>
+                <th>Premium</th>
+                <th>Stop Loss</th>
+                <th>Trade</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user_input in user_inputs %}
+            <tr>
+                <td>{{ user_input.start_time }}</td>
+                <td>{{ user_input.end_time }}</td>
+                <td>{{ user_input.total_quantity }}</td>
+                <td>{{ user_input.lot_size }}</td>
+                <td>{{ user_input.interval }}</td>
+                <td>{{ user_input.premium }}</td>
+                <td>{{ user_input.stop_loss }}</td>
+                <td>{{ user_input.trade }}</td>
+                <td>{{ user_input.created_at }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html> 
+
