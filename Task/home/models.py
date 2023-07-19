@@ -10,3 +10,6 @@ class UserInput(models.Model):
     stop_loss = models.DecimalField(max_digits=10, decimal_places=2)
     trade = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return self.start_time
